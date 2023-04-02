@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.margin-200{
+  margin: 0 200px;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color:aliceblue; */
+    align-items: center;
+}
+header img{
+    height: 36px;
+
+}
+nav{
+   list-style: none;
+   position: relative;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 120px;
+    
+}
+
+#special-menu{
+    position: absolute;
+    top: -7px;
+    right: 1px;
+    padding: 6px 12px;
+    background-color: green;
+    border-radius: 6px;
+    color: aliceblue;
+    text-decoration-line: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.width-page{
+  width: 100%;
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(238, 255, 246) 60%);
+  
+  background: -moz-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(238, 255, 246) 60%);
+  
+  background: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(238, 255, 246) 60%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#ECECEC", GradientType=1 );
+}
+
+.container{
+    position: relative;
+    display: grid;
+    background: hsla(0, 0%, 100%, 1);
+  
+    background: linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, hsla(149, 82%, 78%, 1) 100%);
+    
+    background: -moz-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, hsla(149, 82%, 78%, 1) 100%);
+    
+    background: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, hsla(149, 82%, 78%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#ECECEC", GradientType=1 );
+}
+
+#space{
+    position: relative;
+    height: 100px;
+}
+#sayHello{
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: darkgreen;
+    color: aliceblue;
+    font-size:12px;
+    border-radius: 4px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+  }
+.grid-item p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .item2 {
+    grid-column: 3/span 2;
+    grid-row: 1/ span 2 ;
+  }
+
+  .item3 {
+    grid-column: 1;
+    grid-row: 2;
+    /* background-color: antiquewhite; */
+    align-items: center;
+  }
+
+  .goal-wrapper{
+    background-color: aliceblue;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 20px;
+    justify-content:space-around;
+  }
+
+  figure img{
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 25%;
+    margin-left: 50px;
+  }
+
+  h1 {
+    font-size:xx-large;
+  }
