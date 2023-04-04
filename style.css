@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+#background-index{
+  position: absolute;
+  background: hsla(0, 0%, 100%, 1);
+  
+  background: linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 30%, 1) 30%, rgb(53, 215, 243) 100%);
+  
+  background: -moz-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 30%, 1) 30%, rgb(53, 215, 243) 100%);
+  
+  background: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 30%, 1) 30%, rgb(53, 215, 243) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#ECECEC", GradientType=1 );
+z-index: 0;
 }
 
 .margin-200{
@@ -15,7 +35,6 @@ header{
     height: 60px;
     display: flex;
     justify-content: space-between;
-    /* background-color:aliceblue; */
     align-items: center;
 }
 header img{
@@ -31,8 +50,16 @@ nav ul{
     list-style: none;
     display: flex;
     gap: 40px;
-    margin-right: 120px;
+    margin-right: 110px;
     
+}
+
+#logo{
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Righteous', cursive;
+  margin-left: -310px;
 }
 
 #special-menu{
@@ -46,21 +73,23 @@ nav ul{
     text-decoration-line: none;
 }
 
+#special-menu:hover{
+  background-color: rgb(0, 177, 0);
+}
+
 nav ul li a{
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover{
+  padding-bottom: 2px;
+  border-bottom: 2px solid darkgreen;
 }
 
 .width-page{
-  width: 100%;
-  background: hsla(0, 0%, 100%, 1);
-
-  background: linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(238, 255, 246) 60%);
-  
-  background: -moz-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(238, 255, 246) 60%);
-  
-  background: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(238, 255, 246) 60%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#ECECEC", GradientType=1 );
+  background: rgb(197,255,229);
+  background: linear-gradient(225deg, rgba(197,255,229,1) 0%, rgba(225,239,255,1) 16%, rgba(231,231,231,1) 42%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 100%);
 }
 
 .container{
@@ -68,11 +97,11 @@ nav ul li a{
     display: grid;
     background: hsla(0, 0%, 100%, 1);
   
-    background: linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, hsla(149, 82%, 78%, 1) 100%);
+    background: linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(53, 215, 243) 100%);
     
-    background: -moz-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, hsla(149, 82%, 78%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(53, 215, 243) 100%);
     
-    background: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, hsla(149, 82%, 78%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 93%, 1) 60%, rgb(53, 215, 243) 100%);
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#ECECEC", GradientType=1 );
 }
@@ -115,6 +144,10 @@ nav ul li a{
     align-items: center;
   }
 
+  #profil-absolute{
+    z-index: 5;
+  }
+
   .goal-wrapper{
     background-color: aliceblue;
     display: flex;
@@ -127,11 +160,105 @@ nav ul li a{
 
   figure img{
     width: 80%;
-    background-color: aliceblue;
-    border-radius: 25%;
+    /* background-color: aliceblue; */
+    border-radius: 20px;
     margin-left: 50px;
   }
 
   h1 {
     font-size:xx-large;
   }
+
+  /* CSS Halaman About 
+  */
+
+  .background{
+    background: rgb(218,255,244);
+    background: linear-gradient(38deg, rgba(218,255,244,1) 0%, rgba(255,239,239,1) 16%, rgba(208,208,208,1) 42%, rgba(188,208,255,1) 65%, rgb(214, 214, 214) 100%);
+    position: absolute;
+    z-index: 0;
+  }
+
+  .absolute{
+    position: absolute;
+    width: 300px;
+    left: 100px;
+    top: 20px;
+    z-index: 0;
+    scale: 1.3;
+    rotate:deg;
+  }
+  .container-box{
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    width: 1011px;
+    height: 450px;
+    background-color: rgb(231, 243, 243);
+    margin: 60px 168.5px 65px 168.5px;
+    border-radius: 10px;
+    padding: 20px 60px;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .content-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #photo-wrapper img{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+    height: 330px;
+
+  }
+
+  .font-p {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #special-button{
+    /* font-weight: bold; */
+    padding: 8px 10px;
+    background-color: darkgreen;
+    color:antiquewhite;
+    
+  }
+
+  .center{
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+  }
+
+  #button{
+    font-weight: bold;
+    padding: 8px 10px;
+  }
+
+  .slide{
+    position: relative; 
+    width: 100%; 
+    height: 0; 
+    padding-top: 56.2500%;
+        padding-bottom: 0; 
+        box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+        margin-top: 10px; 
+        margin-bottom: 0.9em; 
+        overflow: hidden;
+        border-radius: 8px; 
+        will-change: transform;
+  }
+
+  #special-text{
+    font-size:xx-large;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+  }
+  /* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; 
+font-family: 'Righteous', cursive; */
